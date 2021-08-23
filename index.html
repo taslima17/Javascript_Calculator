@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Calculator</title>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container ">
+    <header>
+        <h1 class="text-5xl my-8 text-center text-gray-800">Simple Calculator</h1>
+    </header>
+    <section>
+        <div class="row">
+            <div class="col-md-12">
+                <form action="#" class="main grid grid-cols-4 gap-5 w-1/4 mx-auto p-10 bg-gray-800" name="calculator">
+                    <input type="text" id="display" class="display form-control col-span-4 py-5" name="display">
+
+                    <input type="button" class="bg-gray-50 " value="1" onclick="one()">
+                    <input type="button" class="bg-gray-50" value="2" onclick="two()">
+                    <input type="button" class="bg-gray-50" value="3" onclick="three()">
+                    <input type="button" class="bg-gray-50" value="4" onclick="four()">
+                    <input type="button" class="bg-gray-50" value="5" onclick="five()">
+                    <input type="button" class="bg-gray-50" value="6" onclick="six()">
+                    <input type="button" class="bg-gray-50" value="7" onclick="seven()">
+                    <input type="button" class="bg-gray-50" value="8" onclick="eight()">
+                    <input type="button" class="bg-gray-50" value="9" onclick="nine()">
+                    <input type="button" class="bg-gray-50" value="0" onclick="zero()">
+                    <input type="button" class="bg-gray-50" value="+" onclick="document.calculator.display.value+='+'">
+                    <input type="button" class="bg-gray-50" value="-" onclick="document.calculator.display.value+='-'">
+                    <input type="button" class="bg-gray-50" value="*" onclick="document.calculator.display.value+='*'">
+                    <input type="button" class="bg-gray-50" value="/" onclick="document.calculator.display.value+='/'">
+                    <input type="button" class="bg-gray-50" value="="
+                        onclick="document.calculator.display.value=eval(calculator.display.value)">
+                    <input type="button" class="bg-gray-50 " value="clear" id="clear">
+                    <input type="button" class="bg-gray-50 col-span-2" value="delete" id="delete">
+                    <input type="button" class="bg-gray-50 col-span-2" value="." onclick="point()">
+
+
+
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
